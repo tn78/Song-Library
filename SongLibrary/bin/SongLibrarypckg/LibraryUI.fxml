@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tejas Nimkar, ALEXANDER NOCCIOLO -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SongLibrarypckg.Controller">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="44.0" onMouseClicked="#viewSong" prefHeight="342.0" prefWidth="347.0" />
+      <TextField fx:id="nameText" layoutX="441.0" layoutY="20.0" prefHeight="25.0" prefWidth="145.0" />
+      <TextField fx:id="artistText" layoutX="441.0" layoutY="61.0" prefHeight="25.0" prefWidth="145.0" />
+      <Button fx:id="editButton" layoutX="405.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#editSong" prefHeight="25.0" prefWidth="167.0" text="Edit" />
+      <TextField fx:id="albumText" layoutX="441.0" layoutY="106.0" prefHeight="25.0" prefWidth="145.0" />
+      <TextField fx:id="yearText" layoutX="441.0" layoutY="151.0" prefHeight="25.0" prefWidth="145.0" />
+      <Text layoutX="383.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="62.2060546875" />
+      <Text layoutX="383.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" wrappingWidth="62.2060546875" />
+      <Text layoutX="383.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album" wrappingWidth="62.2060546875" />
+      <Text layoutX="383.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" wrappingWidth="62.2060546875" />
+      <Button fx:id="addButton" layoutX="405.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#addSong" prefHeight="25.0" prefWidth="167.0" text="Add" />
+      <Button fx:id="deleteButton" layoutX="405.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#deleteSong" prefHeight="25.0" prefWidth="167.0" text="Delete" />
+      <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Song Library" wrappingWidth="347.0" />
+   </children>
+</AnchorPane>
